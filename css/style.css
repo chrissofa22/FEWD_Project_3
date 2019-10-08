@@ -1,0 +1,208 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: rgb(0, 0, 0);
+  }
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  form{
+    max-width: 300px;
+    margin: 0 auto;   
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="streetaddress"],
+  input[type="city"],
+  input[type="state"],
+  input[type="zipcode"],
+  textarea,
+  select {
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: pink;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  select#state {
+    background: pink;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  #zipcode {
+    width: 50%;
+  }
+  
+  fieldset {
+    border: 0 none;
+  }
+  
+  input:focus, textarea:focus {
+    background-color: rgb(255, 117, 202);
+    border: 2px solid #ffffff;
+  }
+  
+  ::-webkit-input-placeholder {
+      color: black;
+      text-indent: 170px;
+      font-size:13px;
+      font-style: italic;  
+  }
+  
+  :-moz-placeholder { /* Firefox 18- */
+     color: black;
+     text-indent: 170px;
+     font-size:13px;
+     font-style: italic; 
+  }
+  
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: black;
+     text-indent: 170px;
+     font-size:13px;
+     font-style: italic;
+  }
+  
+  :-ms-input-placeholder {  
+     color: black;
+     text-indent: 170px;
+     font-size:13px;
+     font-style: italic;
+  }
+
+  header {
+      background: rgb(0, 0, 0);
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px 0 20px
+  }
+  
+  legend {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 20px 0 20px;
+      color: white;
+  }
+  
+  .contact label {
+    font-size: 16px;
+  }
+
+  label {
+      color: white;
+      display: block;
+      margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  button {
+    padding: 20px 40px;
+    color: rgb(0, 0, 0);
+    background-color: pink;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 21px; 
+    background-color: rgb(255, 117, 202);
+  }
+  
+  hr.style1{
+    border-top: 3px solid rgb(255, 255, 255);
+  }
+  
+  hr.style2 {
+    border-top: 8px double rgb(255, 255, 255);
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+      
+      form {
+        min-width: 500px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select#state {
+        width: 70%;
+        display: inline-block;
+      }
+
+      ::-webkit-input-placeholder {
+        color: gray;
+        text-indent: 230px;
+        font-size:13px;
+        font-style: italic;
+      }
+      
+      #zipcode {
+        width: 35%;
+      }
+      
+   .contact label {
+      display: inline-block;
+      text-align: left;
+      width: 26%;
+      margin: 10px 0 5px;
+    }}

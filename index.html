@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>The Code Review</title>
+</head>
+
+<body>
+  <header><h1>THE CODE REVIEW</h1></header>
+  <h2>Signup for our newsletter</h2>
+    <p>Get the latest news on how your code is doing right in your inbox</p>
+	<form action="index.html" method="post">
+    <hr class="style2">
+      <fieldset>
+        <legend>Contact Information</legend> 
+        <div class="contact">
+
+          <label for="name">Full Name</label> 
+          <input required type="text" id="name" name="Name" placeholder="Required"> 
+
+          <label for="email">Email Address</label> 
+          <input required type="email" id="email" name="Email" placeholder="Required"> 
+
+          <label for="telephone">Phone Number</label> 
+          <input required type="tel" id="telephone" name="Telephone"> 
+
+          <label for="address">Street Address</label> 
+          <input required type="text" id="address" name="Address"> 
+
+          <label for="city">City</label> 
+          <input required type="text" id="city" name="City"> 
+
+          <label for="state">State</label> 
+          <select id="state" name="State">
+            <option disabled hidden="" selected value="choose_state">Choose a State</option>
+            <optgroup>
+              <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option>
+              <option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option>
+              <option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option>
+              <option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+              <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option>
+              <option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
+              <option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option>
+              <option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+              <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option>
+              <option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+            </optgroup>
+          </select> 
+
+          <label for="zipcode">Zipcode</label> 
+          <input required  type="text" id="zipcode" name="Zipcode">
+
+        </div>     
+      </fieldset>
+
+		<hr class="style1">
+      <fieldset>
+        <legend>Newsletter</legend> 
+        <div class="newsletter">
+              
+          <label>Select the newsletters you would like to recieve</label> 
+          <input id="htmlnews" name="HTML" type="checkbox" value="html_news">
+          <label class="light" for="htmlnews">HTML News</label><br>
+
+          <input id="cssnews" name="CSS" type="checkbox" value="css_news">
+          <label class="light" for="cssnews">CSS News</label><br>
+
+          <input id="javascriptnews" name="JavaScript" type="checkbox" value="javascript_news">
+          <label class="light" for="javascriptnews">Javascript News</label><br><br>
+
+          <label>Newsletter Format</label> 
+          <input id="html" name="user_format" type="radio" value="html">
+          <label class="light" for="html">HTML</label><br>
+
+          <input id="plaintext" name="user_format" type="radio" value="plaintext">
+          <label class="light" for="plaintext">Plain text</label><br><br>
+
+          <label for="topics">Other topics you'd like to hear about</label> 
+          <textarea id="topics" name="usertopics"></textarea> <button type="submit">Sign Up</button>
+    
+        </div>
+      </fieldset>
+	</form>
+	<div class="copyright"><span>Copyright The Code Review</span></div>
+</body>
+</html>
